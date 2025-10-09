@@ -5,7 +5,7 @@ import TDMobRisk
 
 public typealias FabricGetTokenBlock = @convention(block) (String?) -> Void
 
-// MARK: - OC 可见的选项定义
+// MARK: - 风控服务商
 @objc public enum FabricSimpleRiskProviderOptions: Int {
     case forter        = 1
     case riskified     = 2

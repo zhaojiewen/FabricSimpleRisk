@@ -1,0 +1,80 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FTRCommon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+@_exported import FTRCommon
+import Foundation
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol BuildConfigProtocol {
+  var isDebug: Swift.Bool { get }
+}
+public let buildConfig: any FTRCommon.BuildConfigProtocol
+public protocol FTRListenerProtocol : ObjectiveC.NSObject {
+  func invoke(_ value: Any)
+}
+public protocol FTRListenableProtocol : ObjectiveC.NSObject {
+  associatedtype Listener : FTRCommon.FTRListenerProtocol
+  func registerListener(_ listener: Self.Listener)
+  func unregisterListener(_ listener: Self.Listener)
+  func clear()
+}
+public typealias FTRCallback = (Any) -> Swift.Void
+@objc public class FTRListener : ObjectiveC.NSObject, FTRCommon.FTRListenerProtocol {
+  @objc public init(_ onDataReceived: @escaping FTRCommon.FTRCallback)
+  @objc public func invoke(_ value: Any)
+  @objc deinit
+}
+public class FTRListenable<T> : ObjectiveC.NSObject, FTRCommon.FTRListenableProtocol {
+  public typealias Listener = FTRCommon.FTRListener
+  public var value: T? {
+    get
+    set
+  }
+  public init(value: T?)
+  public func registerListener(_ listener: FTRCommon.FTRListenable<T>.Listener)
+  public func unregisterListener(_ listener: FTRCommon.FTRListenable<T>.Listener)
+  public func clear()
+  @objc deinit
+}
+extension Foundation.OperationQueue {
+  public static func with(dispatchQueue: Dispatch.DispatchQueue) -> Foundation.OperationQueue
+}
+public func assertNotMainThread()
+public protocol UserDefaultsProtocol {
+  func remove(key: Swift.String)
+  func set(key: Swift.String, value: Any?)
+  func integer(key: Swift.String) -> Swift.Int
+  func bool(key: Swift.String) -> Swift.Bool
+  func string(key: Swift.String) -> Swift.String?
+  func object<T>(key: Swift.String) -> T?
+  func any(key: Swift.String) -> Any?
+}
+public protocol FTRLoggerProtocol {
+  static var shared: any FTRCommon.FTRLoggerProtocol { get }
+  func setLogLevel(_ logLevel: Swift.Int)
+  func setDevLogsEnabled(_ enabled: Swift.Bool)
+  func setGlobalErrorHandler(_ handler: @escaping FTRCommon.ErrorBlock)
+  func getLogLevel() -> Swift.Int
+  func error(_ log: Swift.String, sendErrorEvent shouldSendError: Swift.Bool)
+  func error(_ log: Swift.String)
+  func warning(_ log: Swift.String)
+  func debug(_ log: Swift.String)
+  func info(_ log: Swift.String)
+  func verbose(_ log: Swift.String)
+  func dev(_ log: Swift.String)
+}
+extension FTRCommon.FTRLogger {
+  public static func shared() -> any FTRCommon.FTRLoggerProtocol
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class FTRConnectivityDetector : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc final public func hasConnectivity() -> Swift.Bool
+  final public func await(timeoutMilliseconds: Swift.Int64) throws -> Swift.Bool
+  final public func await() throws -> Swift.Bool
+  @objc deinit
+}

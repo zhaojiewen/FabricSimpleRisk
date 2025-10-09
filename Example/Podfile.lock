@@ -7,14 +7,12 @@ PODS:
   - FabricSimpleRisk/Core (0.1.0)
   - FabricSimpleRisk/ForterSDK (0.1.0):
     - FabricSimpleRisk/Core
-    - ForterSDK (~> 3.0.4)
   - FabricSimpleRisk/RiskifiedBeacon (0.1.0):
     - FabricSimpleRisk/Core
     - RiskifiedBeaconXCFramework (~> 1.3.2)
   - FabricSimpleRisk/TrustDecisionPro (0.1.0):
     - FabricSimpleRisk/Core
     - TrustDecisionPro (~> 5.2.0)
-  - ForterSDK (3.0.4)
   - RiskifiedBeaconXCFramework (1.3.2)
   - TrustDecisionPro (5.2.0):
     - TrustDecisionPro/FMDeviceManagerFramework (= 5.2.0)
@@ -26,7 +24,6 @@ PODS:
 
 DEPENDENCIES:
   - FabricSimpleRisk (from `../`)
-  - ForterSDK (from `https://bitbucket.org/forter-mobile/forter-ios-sdk.git`, tag `3.0.4`)
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
@@ -36,21 +33,12 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   FabricSimpleRisk:
     :path: "../"
-  ForterSDK:
-    :git: https://bitbucket.org/forter-mobile/forter-ios-sdk.git
-    :tag: 3.0.4
-
-CHECKOUT OPTIONS:
-  ForterSDK:
-    :git: https://bitbucket.org/forter-mobile/forter-ios-sdk.git
-    :tag: 3.0.4
 
 SPEC CHECKSUMS:
-  FabricSimpleRisk: 64671d5cbcc5961d4eff20af6ac899ada7669b38
-  ForterSDK: 579bf21a2683cd5d47f344e4394206d1b8659853
+  FabricSimpleRisk: 145b48caec865dbc64305cbdd89c63d7a80544a1
   RiskifiedBeaconXCFramework: d5b2f1a885ea33bd15c7757002d1c09788853dc3
   TrustDecisionPro: ee8d7ab3984e8e56b4ae832810e939f1b8e08002
 
-PODFILE CHECKSUM: a2a360669bd05504c5792f6d38c5441e7c2edd51
+PODFILE CHECKSUM: d8b46be06455047896e74413032ba6004b86522e
 
 COCOAPODS: 1.16.2

@@ -1,0 +1,5540 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "FTRAuth",
+    "printedName": "FTRAuth",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "FTRAuth"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRSubject",
+        "printedName": "FTRSubject",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)userId",
+            "mangledName": "$s7FTRAuth10FTRSubjectC6userIdSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)userId",
+                "mangledName": "$s7FTRAuth10FTRSubjectC6userIdSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "desc",
+            "printedName": "desc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)desc",
+            "mangledName": "$s7FTRAuth10FTRSubjectC4descSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)desc",
+                "mangledName": "$s7FTRAuth10FTRSubjectC4descSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "commonName",
+            "printedName": "commonName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)commonName",
+            "mangledName": "$s7FTRAuth10FTRSubjectC10commonNameSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)commonName",
+                "mangledName": "$s7FTRAuth10FTRSubjectC10commonNameSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryName",
+            "printedName": "countryName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)countryName",
+            "mangledName": "$s7FTRAuth10FTRSubjectC11countryNameSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)countryName",
+                "mangledName": "$s7FTRAuth10FTRSubjectC11countryNameSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stateOrProvinceName",
+            "printedName": "stateOrProvinceName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)stateOrProvinceName",
+            "mangledName": "$s7FTRAuth10FTRSubjectC19stateOrProvinceNameSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)stateOrProvinceName",
+                "mangledName": "$s7FTRAuth10FTRSubjectC19stateOrProvinceNameSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localityName",
+            "printedName": "localityName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)localityName",
+            "mangledName": "$s7FTRAuth10FTRSubjectC12localityNameSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)localityName",
+                "mangledName": "$s7FTRAuth10FTRSubjectC12localityNameSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "organizationName",
+            "printedName": "organizationName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)organizationName",
+            "mangledName": "$s7FTRAuth10FTRSubjectC16organizationNameSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)organizationName",
+                "mangledName": "$s7FTRAuth10FTRSubjectC16organizationNameSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "organizationUnitName",
+            "printedName": "organizationUnitName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)organizationUnitName",
+            "mangledName": "$s7FTRAuth10FTRSubjectC20organizationUnitNameSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)organizationUnitName",
+                "mangledName": "$s7FTRAuth10FTRSubjectC20organizationUnitNameSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emailAddress",
+            "printedName": "emailAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(py)emailAddress",
+            "mangledName": "$s7FTRAuth10FTRSubjectC12emailAddressSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)emailAddress",
+                "mangledName": "$s7FTRAuth10FTRSubjectC12emailAddressSSSgvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(userId:desc:commonName:countryName:stateOrProvinceName:localityName:organizationName:organizationUnitName:emailAddress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRSubject",
+                "printedName": "FTRAuth.FTRSubject",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)initWithUserId:desc:commonName:countryName:stateOrProvinceName:localityName:organizationName:organizationUnitName:emailAddress:",
+            "mangledName": "$s7FTRAuth10FTRSubjectC6userId4desc10commonName07countryG0015stateOrProvinceG008localityG0012organizationG00m4UnitG012emailAddressACSSSg_A8Mtcfc",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRSubject",
+                "printedName": "FTRAuth.FTRSubject",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRSubject"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRSubject(im)init",
+            "mangledName": "$s7FTRAuth10FTRSubjectCACycfc",
+            "moduleName": "FTRAuth",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRAuth@objc(cs)FTRSubject",
+        "mangledName": "$s7FTRAuth10FTRSubjectC",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FTRCommon",
+        "printedName": "FTRCommon",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRAuthError",
+        "printedName": "FTRAuthError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidCertificate",
+            "printedName": "invalidCertificate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRAuthError",
+                    "printedName": "FTRAuth.FTRAuthError",
+                    "usr": "s:7FTRAuth0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO18invalidCertificateyA2CmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO18invalidCertificateyA2CmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attestationDisabled",
+            "printedName": "attestationDisabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRAuthError",
+                    "printedName": "FTRAuth.FTRAuthError",
+                    "usr": "s:7FTRAuth0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO19attestationDisabledyA2CmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO19attestationDisabledyA2CmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unsupportedVersion",
+            "printedName": "unsupportedVersion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRAuthError",
+                    "printedName": "FTRAuth.FTRAuthError",
+                    "usr": "s:7FTRAuth0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO18unsupportedVersionyA2CmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO18unsupportedVersionyA2CmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userIdMismatch",
+            "printedName": "userIdMismatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRAuthError",
+                    "printedName": "FTRAuth.FTRAuthError",
+                    "usr": "s:7FTRAuth0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO14userIdMismatchyA2CmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO14userIdMismatchyA2CmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notInForeground",
+            "printedName": "notInForeground",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRAuthError",
+                    "printedName": "FTRAuth.FTRAuthError",
+                    "usr": "s:7FTRAuth0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO15notInForegroundyA2CmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO15notInForegroundyA2CmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyChainError",
+            "printedName": "keyChainError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> (FTRAuth.FTRKeychainError) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FTRAuth.FTRKeychainError) -> FTRAuth.FTRAuthError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: FTRAuth.FTRKeychainError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FTRKeychainError",
+                            "printedName": "FTRAuth.FTRKeychainError",
+                            "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO08keyChainB0yAcA011FTRKeychainB0O_tcACmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO08keyChainB0yAcA011FTRKeychainB0O_tcACmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> (FTRCommon.FTRNetworkError) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FTRCommon.FTRNetworkError) -> FTRAuth.FTRAuthError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: FTRCommon.FTRNetworkError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FTRNetworkError",
+                            "printedName": "FTRCommon.FTRNetworkError",
+                            "usr": "s:9FTRCommon15FTRNetworkErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO07networkB0yAC9FTRCommon010FTRNetworkB0O_tcACmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO07networkB0yAC9FTRCommon010FTRNetworkB0O_tcACmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jobManagerError",
+            "printedName": "jobManagerError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRAuthError.Type) -> (FTRCommon.FTRJobManagerError) -> FTRAuth.FTRAuthError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FTRCommon.FTRJobManagerError) -> FTRAuth.FTRAuthError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: FTRCommon.FTRJobManagerError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FTRJobManagerError",
+                            "printedName": "FTRCommon.FTRJobManagerError",
+                            "usr": "s:9FTRCommon18FTRJobManagerErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRAuthError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRAuthError",
+                        "printedName": "FTRAuth.FTRAuthError",
+                        "usr": "s:7FTRAuth0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth0A5ErrorO010jobManagerB0yAC9FTRCommon06FTRJobdB0O_tcACmF",
+            "mangledName": "$s7FTRAuth0A5ErrorO010jobManagerB0yAC9FTRCommon06FTRJobdB0O_tcACmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FTRAuth0A5ErrorO16errorDescriptionSSvp",
+            "mangledName": "$s7FTRAuth0A5ErrorO16errorDescriptionSSvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth0A5ErrorO16errorDescriptionSSvg",
+                "mangledName": "$s7FTRAuth0A5ErrorO16errorDescriptionSSvg",
+                "moduleName": "FTRAuth",
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7FTRAuth0A5ErrorO",
+        "mangledName": "$s7FTRAuth0A5ErrorO",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SerializationError",
+        "printedName": "SerializationError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "serializationFailure",
+            "printedName": "serializationFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.SerializationError.Type) -> (Swift.String) -> FTRAuth.SerializationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FTRAuth.SerializationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SerializationError",
+                        "printedName": "FTRAuth.SerializationError",
+                        "usr": "s:7FTRAuth18SerializationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(field: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.SerializationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SerializationError",
+                        "printedName": "FTRAuth.SerializationError",
+                        "usr": "s:7FTRAuth18SerializationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth18SerializationErrorO20serializationFailureyACSS_tcACmF",
+            "mangledName": "$s7FTRAuth18SerializationErrorO20serializationFailureyACSS_tcACmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FTRAuth18SerializationErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7FTRAuth18SerializationErrorO16errorDescriptionSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth18SerializationErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7FTRAuth18SerializationErrorO16errorDescriptionSSSgvg",
+                "moduleName": "FTRAuth",
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7FTRAuth18SerializationErrorO",
+        "mangledName": "$s7FTRAuth18SerializationErrorO",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JSONSerializationError",
+        "printedName": "JSONSerializationError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidJSONObject",
+            "printedName": "invalidJSONObject",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.JSONSerializationError.Type) -> FTRAuth.JSONSerializationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONSerializationError",
+                    "printedName": "FTRAuth.JSONSerializationError",
+                    "usr": "s:7FTRAuth22JSONSerializationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.JSONSerializationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONSerializationError",
+                        "printedName": "FTRAuth.JSONSerializationError",
+                        "usr": "s:7FTRAuth22JSONSerializationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth22JSONSerializationErrorO17invalidJSONObjectyA2CmF",
+            "mangledName": "$s7FTRAuth22JSONSerializationErrorO17invalidJSONObjectyA2CmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "missingJSONField",
+            "printedName": "missingJSONField",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.JSONSerializationError.Type) -> (Swift.String) -> FTRAuth.JSONSerializationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FTRAuth.JSONSerializationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONSerializationError",
+                        "printedName": "FTRAuth.JSONSerializationError",
+                        "usr": "s:7FTRAuth22JSONSerializationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(field: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.JSONSerializationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONSerializationError",
+                        "printedName": "FTRAuth.JSONSerializationError",
+                        "usr": "s:7FTRAuth22JSONSerializationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth22JSONSerializationErrorO16missingJSONFieldyACSS_tcACmF",
+            "mangledName": "$s7FTRAuth22JSONSerializationErrorO16missingJSONFieldyACSS_tcACmF",
+            "moduleName": "FTRAuth",
+            "spi_group_names": [
+              "FTRInternalApi"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FTRAuth22JSONSerializationErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7FTRAuth22JSONSerializationErrorO16errorDescriptionSSSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth22JSONSerializationErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7FTRAuth22JSONSerializationErrorO16errorDescriptionSSSgvg",
+                "moduleName": "FTRAuth",
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7FTRAuth22JSONSerializationErrorO",
+        "mangledName": "$s7FTRAuth22JSONSerializationErrorO",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FTRCommon",
+        "printedName": "FTRCommon",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRKeyPair",
+        "printedName": "FTRKeyPair",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "secKey",
+            "printedName": "secKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecKey",
+                "printedName": "Security.SecKey",
+                "usr": "c:@T@SecKeyRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair(py)secKey",
+            "mangledName": "$s7FTRAuth10FTRKeyPairC6secKeySo03SecE3Refavp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecKey",
+                    "printedName": "Security.SecKey",
+                    "usr": "c:@T@SecKeyRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair(im)secKey",
+                "mangledName": "$s7FTRAuth10FTRKeyPairC6secKeySo03SecE3Refavg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(secKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRKeyPair",
+                "printedName": "FTRAuth.FTRKeyPair",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecKey",
+                "printedName": "Security.SecKey",
+                "usr": "c:@T@SecKeyRef"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair(im)initWithSecKey:",
+            "mangledName": "$s7FTRAuth10FTRKeyPairC6secKeyACSo03SecE3Refa_tcfc",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "publicKey",
+            "printedName": "publicKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair(py)publicKey",
+            "mangledName": "$s7FTRAuth10FTRKeyPairC9publicKey10Foundation4DataVSgvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair(im)publicKey",
+                "mangledName": "$s7FTRAuth10FTRKeyPairC9publicKey10Foundation4DataVSgvg",
+                "moduleName": "FTRAuth",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sign",
+            "printedName": "sign(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair(im)signWithData:error:",
+            "mangledName": "$s7FTRAuth10FTRKeyPairC4sign4data10Foundation4DataVAH_tKF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRKeyPair",
+                "printedName": "FTRAuth.FTRKeyPair",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair(im)init",
+            "mangledName": "$s7FTRAuth10FTRKeyPairCACycfc",
+            "moduleName": "FTRAuth",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair",
+        "mangledName": "$s7FTRAuth10FTRKeyPairC",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRX509Certificate",
+        "printedName": "FTRX509Certificate",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecCertificate",
+                "printedName": "Security.SecCertificate",
+                "usr": "c:@T@SecCertificateRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(py)value",
+            "mangledName": "$s7FTRAuth18FTRX509CertificateC5valueSo03SecC3Refavp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecCertificate",
+                    "printedName": "Security.SecCertificate",
+                    "usr": "c:@T@SecCertificateRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(im)value",
+                "mangledName": "$s7FTRAuth18FTRX509CertificateC5valueSo03SecC3Refavg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(py)data",
+            "mangledName": "$s7FTRAuth18FTRX509CertificateC4data10Foundation4DataVvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(im)data",
+                "mangledName": "$s7FTRAuth18FTRX509CertificateC4data10Foundation4DataVvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(certificate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRX509Certificate",
+                "printedName": "FTRAuth.FTRX509Certificate",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecCertificate",
+                "printedName": "Security.SecCertificate",
+                "usr": "c:@T@SecCertificateRef"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(im)initWithCertificate:",
+            "mangledName": "$s7FTRAuth18FTRX509CertificateC11certificateACSo03SecC3Refa_tcfc",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encoded",
+            "printedName": "encoded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(im)encoded",
+            "mangledName": "$s7FTRAuth18FTRX509CertificateC7encodedSSyF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pem",
+            "printedName": "pem()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(im)pem",
+            "mangledName": "$s7FTRAuth18FTRX509CertificateC3pemSSyF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isValid",
+            "printedName": "isValid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(im)isValid",
+            "mangledName": "$s7FTRAuth18FTRX509CertificateC7isValidSbyF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Dynamic",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRX509Certificate",
+                "printedName": "FTRAuth.FTRX509Certificate",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate(im)init",
+            "mangledName": "$s7FTRAuth18FTRX509CertificateCACycfc",
+            "moduleName": "FTRAuth",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate",
+        "mangledName": "$s7FTRAuth18FTRX509CertificateC",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRAuthenticationParams",
+        "printedName": "FTRAuthenticationParams",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(userId:siteId:sdkVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRAuthenticationParams",
+                "printedName": "FTRAuth.FTRAuthenticationParams",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationParams"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationParams(im)initWithUserId:siteId:sdkVersion:",
+            "mangledName": "$s7FTRAuth23FTRAuthenticationParamsC6userId04siteE010sdkVersionACSS_S2Stcfc",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRAuthenticationParams",
+                "printedName": "FTRAuth.FTRAuthenticationParams",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationParams"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationParams(im)init",
+            "mangledName": "$s7FTRAuth23FTRAuthenticationParamsCACycfc",
+            "moduleName": "FTRAuth",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationParams",
+        "mangledName": "$s7FTRAuth23FTRAuthenticationParamsC",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FTRCommon",
+        "printedName": "FTRCommon",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRKeychainProtocol",
+        "printedName": "FTRKeychainProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "upsertClientCertificate",
+            "printedName": "upsertClientCertificate(x509certificate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<FTRAuth.FTRX509Certificate, FTRAuth.FTRKeychainError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRX509Certificate",
+                    "printedName": "FTRAuth.FTRX509Certificate",
+                    "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRKeychainError",
+                    "printedName": "FTRAuth.FTRKeychainError",
+                    "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRX509Certificate",
+                "printedName": "FTRAuth.FTRX509Certificate",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth19FTRKeychainProtocolP23upsertClientCertificate15x509certificates6ResultOyAA07FTRX509F0CAA0B5ErrorOGAI_tF",
+            "mangledName": "$s7FTRAuth19FTRKeychainProtocolP23upsertClientCertificate15x509certificates6ResultOyAA07FTRX509F0CAA0B5ErrorOGAI_tF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRKeychainProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRKeychainProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getKeyPair",
+            "printedName": "getKeyPair()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRKeyPair",
+                "printedName": "FTRAuth.FTRKeyPair",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth19FTRKeychainProtocolP10getKeyPairAA06FTRKeyF0CyKF",
+            "mangledName": "$s7FTRAuth19FTRKeychainProtocolP10getKeyPairAA06FTRKeyF0CyKF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRKeychainProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRKeychainProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClientCertificate",
+            "printedName": "getClientCertificate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FTRAuth.FTRX509Certificate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRX509Certificate",
+                    "printedName": "FTRAuth.FTRX509Certificate",
+                    "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth19FTRKeychainProtocolP20getClientCertificateAA07FTRX509F0CSgyF",
+            "mangledName": "$s7FTRAuth19FTRKeychainProtocolP20getClientCertificateAA07FTRX509F0CSgyF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRKeychainProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRKeychainProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCertNonce",
+            "printedName": "getCertNonce()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth19FTRKeychainProtocolP12getCertNonceSSSgyF",
+            "mangledName": "$s7FTRAuth19FTRKeychainProtocolP12getCertNonceSSSgyF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRKeychainProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRKeychainProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanup",
+            "printedName": "cleanup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Swift.String, FTRAuth.FTRKeychainError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRKeychainError",
+                    "printedName": "FTRAuth.FTRKeychainError",
+                    "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth19FTRKeychainProtocolP7cleanups6ResultOySSAA0B5ErrorOGyF",
+            "mangledName": "$s7FTRAuth19FTRKeychainProtocolP7cleanups6ResultOySSAA0B5ErrorOGyF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRKeychainProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRKeychainProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7FTRAuth19FTRKeychainProtocolP",
+        "mangledName": "$s7FTRAuth19FTRKeychainProtocolP",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRKeychainError",
+        "printedName": "FTRKeychainError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "upsertCertificateError",
+            "printedName": "upsertCertificateError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRKeychainError.Type) -> (Swift.String) -> FTRAuth.FTRKeychainError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FTRAuth.FTRKeychainError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRKeychainError",
+                        "printedName": "FTRAuth.FTRKeychainError",
+                        "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRKeychainError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRKeychainError",
+                        "printedName": "FTRAuth.FTRKeychainError",
+                        "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth16FTRKeychainErrorO017upsertCertificateC0yACSS_tcACmF",
+            "mangledName": "$s7FTRAuth16FTRKeychainErrorO017upsertCertificateC0yACSS_tcACmF",
+            "moduleName": "FTRAuth"
+          },
+          {
+            "kind": "Var",
+            "name": "createSecKeyError",
+            "printedName": "createSecKeyError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRKeychainError.Type) -> (Swift.String) -> FTRAuth.FTRKeychainError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FTRAuth.FTRKeychainError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRKeychainError",
+                        "printedName": "FTRAuth.FTRKeychainError",
+                        "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRKeychainError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRKeychainError",
+                        "printedName": "FTRAuth.FTRKeychainError",
+                        "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth16FTRKeychainErrorO012createSecKeyC0yACSS_tcACmF",
+            "mangledName": "$s7FTRAuth16FTRKeychainErrorO012createSecKeyC0yACSS_tcACmF",
+            "moduleName": "FTRAuth"
+          },
+          {
+            "kind": "Var",
+            "name": "cleanupError",
+            "printedName": "cleanupError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FTRAuth.FTRKeychainError.Type) -> (Swift.String) -> FTRAuth.FTRKeychainError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FTRAuth.FTRKeychainError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRKeychainError",
+                        "printedName": "FTRAuth.FTRKeychainError",
+                        "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FTRAuth.FTRKeychainError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FTRKeychainError",
+                        "printedName": "FTRAuth.FTRKeychainError",
+                        "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7FTRAuth16FTRKeychainErrorO07cleanupC0yACSS_tcACmF",
+            "mangledName": "$s7FTRAuth16FTRKeychainErrorO07cleanupC0yACSS_tcACmF",
+            "moduleName": "FTRAuth"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FTRAuth16FTRKeychainErrorO16errorDescriptionSSvp",
+            "mangledName": "$s7FTRAuth16FTRKeychainErrorO16errorDescriptionSSvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth16FTRKeychainErrorO16errorDescriptionSSvg",
+                "mangledName": "$s7FTRAuth16FTRKeychainErrorO16errorDescriptionSSvg",
+                "moduleName": "FTRAuth",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7FTRAuth16FTRKeychainErrorO",
+        "mangledName": "$s7FTRAuth16FTRKeychainErrorO",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRKeychain",
+        "printedName": "FTRKeychain",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRKeychain",
+                "printedName": "FTRAuth.FTRKeychain",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain(cpy)shared",
+            "mangledName": "$s7FTRAuth11FTRKeychainC6sharedACvpZ",
+            "moduleName": "FTRAuth",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRKeychain",
+                    "printedName": "FTRAuth.FTRKeychain",
+                    "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain(cm)shared",
+                "mangledName": "$s7FTRAuth11FTRKeychainC6sharedACvgZ",
+                "moduleName": "FTRAuth",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getKeyPair",
+            "printedName": "getKeyPair()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRKeyPair",
+                "printedName": "FTRAuth.FTRKeyPair",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRKeyPair"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain(im)getKeyPairAndReturnError:",
+            "mangledName": "$s7FTRAuth11FTRKeychainC10getKeyPairAA06FTRKeyE0CyKF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "upsertClientCertificate",
+            "printedName": "upsertClientCertificate(x509certificate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<FTRAuth.FTRX509Certificate, FTRAuth.FTRKeychainError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRX509Certificate",
+                    "printedName": "FTRAuth.FTRX509Certificate",
+                    "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRKeychainError",
+                    "printedName": "FTRAuth.FTRKeychainError",
+                    "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRX509Certificate",
+                "printedName": "FTRAuth.FTRX509Certificate",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth11FTRKeychainC23upsertClientCertificate15x509certificates6ResultOyAA07FTRX509E0CAA0B5ErrorOGAI_tF",
+            "mangledName": "$s7FTRAuth11FTRKeychainC23upsertClientCertificate15x509certificates6ResultOyAA07FTRX509E0CAA0B5ErrorOGAI_tF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClientCertificate",
+            "printedName": "getClientCertificate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FTRAuth.FTRX509Certificate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRX509Certificate",
+                    "printedName": "FTRAuth.FTRX509Certificate",
+                    "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain(im)getClientCertificate",
+            "mangledName": "$s7FTRAuth11FTRKeychainC20getClientCertificateAA07FTRX509E0CSgyF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanup",
+            "printedName": "cleanup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Swift.String, FTRAuth.FTRKeychainError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRKeychainError",
+                    "printedName": "FTRAuth.FTRKeychainError",
+                    "usr": "s:7FTRAuth16FTRKeychainErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth11FTRKeychainC7cleanups6ResultOySSAA0B5ErrorOGyF",
+            "mangledName": "$s7FTRAuth11FTRKeychainC7cleanups6ResultOySSAA0B5ErrorOGyF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCertNonce",
+            "printedName": "getCertNonce()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain(im)getCertNonce",
+            "mangledName": "$s7FTRAuth11FTRKeychainC12getCertNonceSSSgyF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRAuth@objc(cs)FTRKeychain",
+        "mangledName": "$s7FTRAuth11FTRKeychainC",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FTRKeychainProtocol",
+            "printedName": "FTRKeychainProtocol",
+            "usr": "s:7FTRAuth19FTRKeychainProtocolP",
+            "mangledName": "$s7FTRAuth19FTRKeychainProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FTRCommon",
+        "printedName": "FTRCommon",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FTRCommon",
+        "printedName": "FTRCommon",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRMobileAuthenticatorProtocol",
+        "printedName": "FTRMobileAuthenticatorProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isAttestationEnabled",
+            "printedName": "isAttestationEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP20isAttestationEnabledSbvp",
+            "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP20isAttestationEnabledSbvp",
+            "moduleName": "FTRAuth",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP20isAttestationEnabledSbvg",
+                "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP20isAttestationEnabledSbvg",
+                "moduleName": "FTRAuth",
+                "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRMobileAuthenticatorProtocol>",
+                "sugared_genericSig": "<Self where Self : FTRAuth.FTRMobileAuthenticatorProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authToken",
+            "printedName": "authToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP9authTokenSSvp",
+            "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP9authTokenSSvp",
+            "moduleName": "FTRAuth",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP9authTokenSSvg",
+                "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP9authTokenSSvg",
+                "moduleName": "FTRAuth",
+                "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRMobileAuthenticatorProtocol>",
+                "sugared_genericSig": "<Self where Self : FTRAuth.FTRMobileAuthenticatorProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldSendAuthErrors",
+            "printedName": "shouldSendAuthErrors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP20shouldSendAuthErrorsSbvp",
+            "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP20shouldSendAuthErrorsSbvp",
+            "moduleName": "FTRAuth",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP20shouldSendAuthErrorsSbvg",
+                "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP20shouldSendAuthErrorsSbvg",
+                "moduleName": "FTRAuth",
+                "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRMobileAuthenticatorProtocol>",
+                "sugared_genericSig": "<Self where Self : FTRAuth.FTRMobileAuthenticatorProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate(params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<FTRAuth.FTRX509Certificate, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRX509Certificate",
+                    "printedName": "FTRAuth.FTRX509Certificate",
+                    "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRAuthenticationParams",
+                "printedName": "FTRAuth.FTRAuthenticationParams",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationParams"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP12authenticate6paramss6ResultOyAA18FTRX509CertificateCs5Error_pGAA23FTRAuthenticationParamsC_tF",
+            "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP12authenticate6paramss6ResultOyAA18FTRX509CertificateCs5Error_pGAA23FTRAuthenticationParamsC_tF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRMobileAuthenticatorProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRMobileAuthenticatorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerAuthTokenUpdates",
+            "printedName": "registerAuthTokenUpdates(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRListener",
+                "printedName": "FTRCommon.FTRListener",
+                "usr": "c:@M@FTRCommon@objc(cs)FTRListener"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP24registerAuthTokenUpdatesyy9FTRCommon11FTRListenerCF",
+            "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP24registerAuthTokenUpdatesyy9FTRCommon11FTRListenerCF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRMobileAuthenticatorProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRMobileAuthenticatorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unregisterAuthTokenUpdates",
+            "printedName": "unregisterAuthTokenUpdates(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRListener",
+                "printedName": "FTRCommon.FTRListener",
+                "usr": "c:@M@FTRCommon@objc(cs)FTRListener"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP26unregisterAuthTokenUpdatesyy9FTRCommon11FTRListenerCF",
+            "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP26unregisterAuthTokenUpdatesyy9FTRCommon11FTRListenerCF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0 where τ_0_0 : FTRAuth.FTRMobileAuthenticatorProtocol>",
+            "sugared_genericSig": "<Self where Self : FTRAuth.FTRMobileAuthenticatorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP",
+        "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRMobileAuthenticator",
+        "printedName": "FTRMobileAuthenticator",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authToken",
+            "printedName": "authToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(py)authToken",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC9authTokenSSvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)authToken",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC9authTokenSSvg",
+                "moduleName": "FTRAuth",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAttestationEnabled",
+            "printedName": "isAttestationEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(py)isAttestationEnabled",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20isAttestationEnabledSbvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)isAttestationEnabled",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20isAttestationEnabledSbvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)setIsAttestationEnabled:",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20isAttestationEnabledSbvs",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth22FTRMobileAuthenticatorC20isAttestationEnabledSbvM",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20isAttestationEnabledSbvM",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAuthTokenEnabled",
+            "printedName": "isAuthTokenEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(py)isAuthTokenEnabled",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC18isAuthTokenEnabledSbvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)isAuthTokenEnabled",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC18isAuthTokenEnabledSbvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)setIsAuthTokenEnabled:",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC18isAuthTokenEnabledSbvs",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth22FTRMobileAuthenticatorC18isAuthTokenEnabledSbvM",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC18isAuthTokenEnabledSbvM",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldSendAuthErrors",
+            "printedName": "shouldSendAuthErrors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(py)shouldSendAuthErrors",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20shouldSendAuthErrorsSbvp",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)shouldSendAuthErrors",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20shouldSendAuthErrorsSbvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)setShouldSendAuthErrors:",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20shouldSendAuthErrorsSbvs",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth22FTRMobileAuthenticatorC20shouldSendAuthErrorsSbvM",
+                "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC20shouldSendAuthErrorsSbvM",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(clientCertificate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRMobileAuthenticator",
+                "printedName": "FTRAuth.FTRMobileAuthenticator",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)initWithClientCertificate:",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC17clientCertificateAC10Foundation4DataV_tcfc",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "registerAuthTokenUpdates",
+            "printedName": "registerAuthTokenUpdates(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRListener",
+                "printedName": "FTRCommon.FTRListener",
+                "usr": "c:@M@FTRCommon@objc(cs)FTRListener"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)registerAuthTokenUpdates:",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC24registerAuthTokenUpdatesyy9FTRCommon11FTRListenerCF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unregisterAuthTokenUpdates",
+            "printedName": "unregisterAuthTokenUpdates(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRListener",
+                "printedName": "FTRCommon.FTRListener",
+                "usr": "c:@M@FTRCommon@objc(cs)FTRListener"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)unregisterAuthTokenUpdates:",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC26unregisterAuthTokenUpdatesyy9FTRCommon11FTRListenerCF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticateWith",
+            "printedName": "authenticateWith(userId:siteId:sdkVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)authenticateWithUserId:siteId:sdkVersion:error:",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC16authenticateWith6userId04siteG010sdkVersionySS_S2StKF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate(params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<FTRAuth.FTRX509Certificate, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FTRX509Certificate",
+                    "printedName": "FTRAuth.FTRX509Certificate",
+                    "usr": "c:@M@FTRAuth@objc(cs)FTRX509Certificate"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRAuthenticationParams",
+                "printedName": "FTRAuth.FTRAuthenticationParams",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationParams"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7FTRAuth22FTRMobileAuthenticatorC12authenticate6paramss6ResultOyAA18FTRX509CertificateCs5Error_pGAA23FTRAuthenticationParamsC_tF",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC12authenticate6paramss6ResultOyAA18FTRX509CertificateCs5Error_pGAA23FTRAuthenticationParamsC_tF",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRMobileAuthenticator",
+                "printedName": "FTRAuth.FTRMobileAuthenticator",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator(im)init",
+            "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorCACycfc",
+            "moduleName": "FTRAuth",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator",
+        "mangledName": "$s7FTRAuth22FTRMobileAuthenticatorC",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FTRMobileAuthenticatorProtocol",
+            "printedName": "FTRMobileAuthenticatorProtocol",
+            "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP",
+            "mangledName": "$s7FTRAuth30FTRMobileAuthenticatorProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FTRCommon",
+        "printedName": "FTRCommon",
+        "declKind": "Import",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRAuthenticationDependable",
+        "printedName": "FTRAuthenticationDependable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(cpy)identifier",
+            "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10identifierSSvpZ",
+            "moduleName": "FTRAuth",
+            "static": true,
+            "objc_name": "identifier",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(cm)identifier",
+                "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10identifierSSvgZ",
+                "moduleName": "FTRAuth",
+                "static": true,
+                "implicit": true,
+                "objc_name": "identifier",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(py)identifier",
+            "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10identifierSSvp",
+            "moduleName": "FTRAuth",
+            "objc_name": "identifier",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(im)identifier",
+                "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10identifierSSvg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "objc_name": "identifier",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "retryCount",
+            "printedName": "retryCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(py)retryCount",
+            "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10retryCountSivp",
+            "moduleName": "FTRAuth",
+            "objc_name": "retryCount",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(im)retryCount",
+                "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10retryCountSivg",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "objc_name": "retryCount",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(im)setRetryCount:",
+                "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10retryCountSivs",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7FTRAuth27FTRAuthenticationDependableC10retryCountSivM",
+                "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC10retryCountSivM",
+                "moduleName": "FTRAuth",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "FTRInternalApi"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authenticator:ftrKeyChain:logger:userId:siteId:sdkVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRAuthenticationDependable",
+                "printedName": "FTRAuth.FTRAuthenticationDependable",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRMobileAuthenticatorProtocol",
+                "printedName": "any FTRAuth.FTRMobileAuthenticatorProtocol",
+                "usr": "s:7FTRAuth30FTRMobileAuthenticatorProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRKeychainProtocol",
+                "printedName": "any FTRAuth.FTRKeychainProtocol",
+                "usr": "s:7FTRAuth19FTRKeychainProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRLoggerProtocol",
+                "printedName": "any FTRCommon.FTRLoggerProtocol",
+                "usr": "s:9FTRCommon17FTRLoggerProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7FTRAuth27FTRAuthenticationDependableC13authenticator11ftrKeyChain6logger6userId04siteJ010sdkVersionAcA30FTRMobileAuthenticatorProtocol_p_AA011FTRKeychainP0_p9FTRCommon09FTRLoggerP0_pS3Stcfc",
+            "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC13authenticator11ftrKeyChain6logger6userId04siteJ010sdkVersionAcA30FTRMobileAuthenticatorProtocol_p_AA011FTRKeychainP0_p9FTRCommon09FTRLoggerP0_pS3Stcfc",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authenticator:userId:siteId:sdkVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRAuthenticationDependable",
+                "printedName": "FTRAuth.FTRAuthenticationDependable",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FTRMobileAuthenticator",
+                "printedName": "FTRAuth.FTRMobileAuthenticator",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRMobileAuthenticator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(im)initWithAuthenticator:userId:siteId:sdkVersion:",
+            "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC13authenticator6userId04siteF010sdkVersionAcA22FTRMobileAuthenticatorC_S3Stcfc",
+            "moduleName": "FTRAuth",
+            "declAttributes": [
+              "AccessControl",
+              "Convenience",
+              "SPIAccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "isSatisfied",
+            "printedName": "isSatisfied(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(im)isSatisfiedWithOptions:",
+            "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC11isSatisfied7optionsSbSo12NSDictionaryC_tF",
+            "moduleName": "FTRAuth",
+            "objc_name": "isSatisfiedWithOptions:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRAuthenticationDependable",
+                "printedName": "FTRAuth.FTRAuthenticationDependable",
+                "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable(im)init",
+            "mangledName": "$s7FTRAuth27FTRAuthenticationDependableCACycfc",
+            "moduleName": "FTRAuth",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRAuth@objc(cs)FTRAuthenticationDependable",
+        "mangledName": "$s7FTRAuth27FTRAuthenticationDependableC",
+        "moduleName": "FTRAuth",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Dependable",
+            "printedName": "Dependable",
+            "usr": "c:@M@FTRCommon@objc(pl)Dependable",
+            "mangledName": "$s9FTRCommon10DependableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRJobRequest",
+        "printedName": "FTRJobRequest",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setRequireAuthentication",
+            "printedName": "setRequireAuthentication()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9FTRCommon13FTRJobRequestV7FTRAuthE24setRequireAuthenticationyyF",
+            "mangledName": "$s9FTRCommon13FTRJobRequestV7FTRAuthE24setRequireAuthenticationyyF",
+            "moduleName": "FTRAuth",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9FTRCommon13FTRJobRequestV",
+        "mangledName": "$s9FTRCommon13FTRJobRequestV",
+        "moduleName": "FTRCommon",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRJobRequestCompat",
+        "printedName": "FTRJobRequestCompat",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setRequireAuthentication",
+            "printedName": "setRequireAuthentication()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FTRAuth@FTRCommon@objc(cs)FTRJobRequestCompat(im)setRequireAuthentication",
+            "mangledName": "$s9FTRCommon19FTRJobRequestCompatC7FTRAuthE24setRequireAuthenticationyyF",
+            "moduleName": "FTRAuth",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "FTRInternalApi"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FTRCommon@objc(cs)FTRJobRequestCompat",
+        "mangledName": "$s9FTRCommon19FTRJobRequestCompatC",
+        "moduleName": "FTRCommon",
+        "declAttributes": [
+          "Final",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "FTRInternalApi"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/CSRGenerator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3469,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 234,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 159,
+      "length": 16,
+      "value": "[6, 3, 85, 4, 13]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 224,
+      "length": 16,
+      "value": "[6, 3, 85, 4, 3]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 289,
+      "length": 16,
+      "value": "[6, 3, 85, 4, 6]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 348,
+      "length": 16,
+      "value": "[6, 3, 85, 4, 8]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 400,
+      "length": 16,
+      "value": "[6, 3, 85, 4, 7]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 460,
+      "length": 17,
+      "value": "[6, 3, 85, 4, 10]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 525,
+      "length": 17,
+      "value": "[6, 3, 85, 4, 11]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 582,
+      "length": 42,
+      "value": "[6, 9, 42, 134, 72, 134, 247, 13, 1, 9, 1]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 688,
+      "length": 45,
+      "value": "[48, 10, 6, 8, 42, 134, 72, 206, 61, 4, 3, 2]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 767,
+      "length": 49,
+      "value": "[6, 10, 9, 146, 38, 137, 147, 242, 44, 100, 1, 1]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 858,
+      "length": 18,
+      "value": "[6, 3, 85, 29, 17]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 912,
+      "length": 18,
+      "value": "[6, 3, 85, 29, 15]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 974,
+      "length": 18,
+      "value": "[6, 3, 85, 29, 37]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 1030,
+      "length": 31,
+      "value": "[6, 8, 43, 6, 1, 5, 5, 7, 3, 2]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 1105,
+      "length": 43,
+      "value": "[6, 9, 42, 134, 72, 134, 247, 13, 1, 9, 14]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 1187,
+      "length": 34,
+      "value": "[6, 7, 42, 134, 72, 206, 61, 2, 1]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/OIDConstants.swift",
+      "kind": "Array",
+      "offset": 1265,
+      "length": 37,
+      "value": "[6, 8, 42, 134, 72, 206, 61, 3, 1, 7]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/URLSessionConfigurator.swift",
+      "kind": "Array",
+      "offset": 225,
+      "length": 63,
+      "value": "[106, 69, 111, 75, 66, 105, 49, 115, 56, 51, 82, 100, 113, 108]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
+      "length": 25,
+      "value": "\"m_forter_att_cert_nonce\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 1324,
+      "length": 17,
+      "value": "\"m_forter_att_kp\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 1388,
+      "length": 19,
+      "value": "\"m_forter_att_cert\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 693,
+      "length": 18,
+      "value": "\"cdn14.forter.com\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 37,
+      "value": "\"https:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
+      "length": 1,
+      "value": "\"\/attest\/apple\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 880,
+      "length": 29,
+      "value": "\"https:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 1,
+      "value": "\"\/auth\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 976,
+      "length": 11,
+      "value": "\"mobileUID\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1016,
+      "length": 8,
+      "value": "\"siteId\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1051,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1083,
+      "length": 9,
+      "value": "\"certReq\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1131,
+      "length": 18,
+      "value": "\"certificateChain\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AuthServerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1183,
+      "length": 6,
+      "value": "\"cert\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AttestationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 301,
+      "length": 6,
+      "value": "\"cert\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/Network\/AttestationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 339,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 160,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 184,
+      "length": 4,
+      "value": "0x02"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 210,
+      "length": 4,
+      "value": "0x03"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 238,
+      "length": 4,
+      "value": "0x04"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 4,
+      "value": "0x0C"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 4,
+      "value": "0x13"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 4,
+      "value": "0x16"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 348,
+      "length": 4,
+      "value": "0x30"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 368,
+      "length": 4,
+      "value": "0x31"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 4,
+      "value": "0xA0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 415,
+      "length": 4,
+      "value": "0x82"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/CertificateSigningRequest\/ASN1Formatter.swift",
+      "kind": "Array",
+      "offset": 543,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRMobileAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 692,
+      "length": 24,
+      "value": "\"FTRMobileAuthenticator\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRMobileAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 750,
+      "length": 14,
+      "value": "\"ftr_auth_uid\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRMobileAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 42,
+      "value": "\"com.forter.mobile.background.auth.serial\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRMobileAuthenticator.swift",
+      "kind": "StringLiteral",
+      "offset": 1348,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRMobileAuthenticator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1428,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRMobileAuthenticator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1503,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRMobileAuthenticator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1580,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRAuthenticationDependable.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 17,
+      "value": "\"auth_dependency\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/FTRAuth\/FTRAuth\/FTRAuthenticationDependable.swift",
+      "kind": "IntegerLiteral",
+      "offset": 508,
+      "length": 1,
+      "value": "1"
+    }
+  ]
+}

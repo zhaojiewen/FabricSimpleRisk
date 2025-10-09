@@ -1,0 +1,138 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FTRAuth
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CommonCrypto
+@_exported import FTRAuth
+@_spi(FTRInternalApi) import FTRCommon
+import Foundation
+import Security
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @objcMembers public class FTRSubject : ObjectiveC.NSObject {
+  @objc final public let userId: Swift.String?
+  @objc final public let desc: Swift.String?
+  @objc final public let commonName: Swift.String?
+  @objc final public let countryName: Swift.String?
+  @objc final public let stateOrProvinceName: Swift.String?
+  @objc final public let localityName: Swift.String?
+  @objc final public let organizationName: Swift.String?
+  @objc final public let organizationUnitName: Swift.String?
+  @objc final public let emailAddress: Swift.String?
+  @objc public init(userId: Swift.String?, desc: Swift.String? = nil, commonName: Swift.String? = nil, countryName: Swift.String? = nil, stateOrProvinceName: Swift.String? = nil, localityName: Swift.String? = nil, organizationName: Swift.String? = nil, organizationUnitName: Swift.String? = nil, emailAddress: Swift.String? = nil)
+  @objc deinit
+}
+@_spi(FTRInternalApi) public enum FTRAuthError : Foundation.LocalizedError {
+  @_spi(FTRInternalApi) case invalidCertificate
+  @_spi(FTRInternalApi) case attestationDisabled
+  @_spi(FTRInternalApi) case unsupportedVersion
+  @_spi(FTRInternalApi) case userIdMismatch
+  @_spi(FTRInternalApi) case notInForeground
+  @_spi(FTRInternalApi) case keyChainError(error: FTRAuth.FTRKeychainError)
+  @_spi(FTRInternalApi) case networkError(error: FTRCommon.FTRNetworkError)
+  @_spi(FTRInternalApi) case jobManagerError(error: FTRCommon.FTRJobManagerError)
+  @_spi(FTRInternalApi) public var errorDescription: Swift.String {
+    @_spi(FTRInternalApi) get
+  }
+}
+@_spi(FTRInternalApi) public enum SerializationError : Foundation.LocalizedError {
+  @_spi(FTRInternalApi) case serializationFailure(field: Swift.String)
+  @_spi(FTRInternalApi) public var errorDescription: Swift.String? {
+    @_spi(FTRInternalApi) get
+  }
+}
+@_spi(FTRInternalApi) public enum JSONSerializationError : Foundation.LocalizedError {
+  @_spi(FTRInternalApi) case invalidJSONObject
+  @_spi(FTRInternalApi) case missingJSONField(field: Swift.String)
+  @_spi(FTRInternalApi) public var errorDescription: Swift.String? {
+    @_spi(FTRInternalApi) get
+  }
+}
+@objc @objcMembers final public class FTRKeyPair : ObjectiveC.NSObject {
+  @objc final public let secKey: Security.SecKey
+  @objc public init(secKey: Security.SecKey)
+  @objc final public var publicKey: Foundation.Data? {
+    @objc get
+  }
+  @objc final public func sign(data: Foundation.Data) throws -> Foundation.Data
+  @objc deinit
+}
+@objc @objcMembers final public class FTRX509Certificate : ObjectiveC.NSObject {
+  @objc final public let value: Security.SecCertificate
+  @objc final public let data: Foundation.Data
+  @objc public init(certificate: Security.SecCertificate)
+  @objc final public func encoded() -> Swift.String
+  @objc final public func pem() -> Swift.String
+  @objc dynamic final public func isValid() -> Swift.Bool
+  @objc deinit
+}
+@objc @objcMembers final public class FTRAuthenticationParams : ObjectiveC.NSObject {
+  @objc public init(userId: Swift.String, siteId: Swift.String, sdkVersion: Swift.String)
+  @objc deinit
+}
+public protocol FTRKeychainProtocol {
+  func upsertClientCertificate(x509certificate: FTRAuth.FTRX509Certificate) -> Swift.Result<FTRAuth.FTRX509Certificate, FTRAuth.FTRKeychainError>
+  func getKeyPair() throws -> FTRAuth.FTRKeyPair
+  func getClientCertificate() -> FTRAuth.FTRX509Certificate?
+  func getCertNonce() -> Swift.String?
+  func cleanup() -> Swift.Result<Swift.String, FTRAuth.FTRKeychainError>
+}
+public enum FTRKeychainError : Foundation.LocalizedError {
+  case upsertCertificateError(reason: Swift.String)
+  case createSecKeyError(reason: Swift.String)
+  case cleanupError(reason: Swift.String)
+  public var errorDescription: Swift.String {
+    get
+  }
+}
+@_spi(FTRInternalApi) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class FTRKeychain : ObjectiveC.NSObject, FTRAuth.FTRKeychainProtocol {
+  @_spi(FTRInternalApi) @objc public static let shared: FTRAuth.FTRKeychain
+  @_spi(FTRInternalApi) @objc final public func getKeyPair() throws -> FTRAuth.FTRKeyPair
+  @_spi(FTRInternalApi) final public func upsertClientCertificate(x509certificate: FTRAuth.FTRX509Certificate) -> Swift.Result<FTRAuth.FTRX509Certificate, FTRAuth.FTRKeychainError>
+  @_spi(FTRInternalApi) @objc final public func getClientCertificate() -> FTRAuth.FTRX509Certificate?
+  @_spi(FTRInternalApi) final public func cleanup() -> Swift.Result<Swift.String, FTRAuth.FTRKeychainError>
+  @_spi(FTRInternalApi) @objc final public func getCertNonce() -> Swift.String?
+  @_spi(FTRInternalApi) @objc deinit
+}
+public protocol FTRMobileAuthenticatorProtocol {
+  var isAttestationEnabled: Swift.Bool { get }
+  var authToken: Swift.String { get }
+  var shouldSendAuthErrors: Swift.Bool { get }
+  func authenticate(params: FTRAuth.FTRAuthenticationParams) -> Swift.Result<FTRAuth.FTRX509Certificate, any Swift.Error>
+  func registerAuthTokenUpdates(_ listener: FTRCommon.FTRListener)
+  func unregisterAuthTokenUpdates(_ listener: FTRCommon.FTRListener)
+}
+@_spi(FTRInternalApi) @objc @_hasMissingDesignatedInitializers @objcMembers final public class FTRMobileAuthenticator : ObjectiveC.NSObject, FTRAuth.FTRMobileAuthenticatorProtocol {
+  @_spi(FTRInternalApi) @objc final public var authToken: Swift.String {
+    @_spi(FTRInternalApi) @objc get
+  }
+  @_spi(FTRInternalApi) @objc final public var isAttestationEnabled: Swift.Bool
+  @_spi(FTRInternalApi) @objc final public var isAuthTokenEnabled: Swift.Bool
+  @_spi(FTRInternalApi) @objc final public var shouldSendAuthErrors: Swift.Bool
+  @_spi(FTRInternalApi) @objc public init(clientCertificate: Foundation.Data)
+  @_spi(FTRInternalApi) @objc final public func registerAuthTokenUpdates(_ listener: FTRCommon.FTRListener)
+  @_spi(FTRInternalApi) @objc final public func unregisterAuthTokenUpdates(_ listener: FTRCommon.FTRListener)
+  @_spi(FTRInternalApi) @objc final public func authenticateWith(userId: Swift.String, siteId: Swift.String, sdkVersion: Swift.String) throws
+  @_spi(FTRInternalApi) final public func authenticate(params: FTRAuth.FTRAuthenticationParams) -> Swift.Result<FTRAuth.FTRX509Certificate, any Swift.Error>
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) @objc @objcMembers final public class FTRAuthenticationDependable : ObjectiveC.NSObject, FTRCommon.Dependable {
+  @_spi(FTRInternalApi) @objc public static let identifier: Swift.String
+  @_spi(FTRInternalApi) @objc final public var identifier: Swift.String {
+    get
+  }
+  @_spi(FTRInternalApi) @objc final public var retryCount: Swift.Int
+  @_spi(FTRInternalApi) public init(authenticator: any FTRAuth.FTRMobileAuthenticatorProtocol, ftrKeyChain: any FTRAuth.FTRKeychainProtocol, logger: any FTRCommon.FTRLoggerProtocol, userId: Swift.String, siteId: Swift.String, sdkVersion: Swift.String)
+  @_spi(FTRInternalApi) @objc convenience public init(authenticator: FTRAuth.FTRMobileAuthenticator, userId: Swift.String, siteId: Swift.String, sdkVersion: Swift.String)
+  @_spi(FTRInternalApi) @objc final public func isSatisfied(options: Foundation.NSDictionary) -> Swift.Bool
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobRequest {
+  @_spi(FTRInternalApi) public func setRequireAuthentication()
+}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobRequestCompat {
+  @_spi(FTRInternalApi) @available(iOS 13.0, *)
+  @objc final public func setRequireAuthentication()
+}

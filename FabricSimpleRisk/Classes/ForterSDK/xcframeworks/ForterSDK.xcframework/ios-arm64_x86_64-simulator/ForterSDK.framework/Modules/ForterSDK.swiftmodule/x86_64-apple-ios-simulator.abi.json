@@ -1,0 +1,300 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ForterSDK",
+    "printedName": "ForterSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ForterSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ForterSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FTRCommon",
+        "printedName": "FTRCommon",
+        "declKind": "Import",
+        "moduleName": "ForterSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ForterSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FTRMobileUIDGenerator",
+        "printedName": "FTRMobileUIDGenerator",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "generate",
+            "printedName": "generate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ForterSDK@objc(cs)FTRMobileUIDGenerator(cm)generate",
+            "mangledName": "$s9ForterSDK21FTRMobileUIDGeneratorC8generateSSyFZ",
+            "moduleName": "ForterSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FTRMobileUIDGenerator",
+                "printedName": "ForterSDK.FTRMobileUIDGenerator",
+                "usr": "c:@M@ForterSDK@objc(cs)FTRMobileUIDGenerator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ForterSDK@objc(cs)FTRMobileUIDGenerator(im)init",
+            "mangledName": "$s9ForterSDK21FTRMobileUIDGeneratorCACycfc",
+            "moduleName": "ForterSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ForterSDK@objc(cs)FTRMobileUIDGenerator",
+        "mangledName": "$s9ForterSDK21FTRMobileUIDGeneratorC",
+        "moduleName": "ForterSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSDKState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 219,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSDKState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 230,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSDKState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 248,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSDKState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSDKState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 285,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSDKState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 9,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSDKState.swift",
+      "kind": "Dictionary",
+      "offset": 779,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 35,
+      "value": "\"com.forter.sdk.sessiontoken.queue\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2813,
+      "length": 4,
+      "value": "\"IC\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2850,
+      "length": 4,
+      "value": "\"CF\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2879,
+      "length": 4,
+      "value": "\"ES\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2943,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2974,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "Dictionary",
+      "offset": 3039,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRSessionTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3076,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/modules\/ForterSDK\/ForterSDK\/FTRMobileUIDGenerator.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 23,
+      "value": "\"ftr_installation_guid\""
+    }
+  ]
+}

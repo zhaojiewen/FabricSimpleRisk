@@ -35,13 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// 统一入口，调用多个SDK
     func configSimpleRisk() {
         FabricSimpleRisk.start(providers: [.forter, .riskified, .trustDecision],
-                               forterSiteId: "",
+                               forterSiteId: "cc4b7359b1d7",
                                riskifiedShopName: "",
                                riskifiedSessionToken: "",
                                tdConfig: FabricTDConfig(isPrivacyAgree: true,
-                                                        partner: "",
-                                                        appKey: "",
-                                                        country: ""))
+                                                        partner: "lycom",
+                                                        appKey: "773085f8d89718d00bde643c7b2fbc1f",
+                                                        country: "cn"))
     }
     
 

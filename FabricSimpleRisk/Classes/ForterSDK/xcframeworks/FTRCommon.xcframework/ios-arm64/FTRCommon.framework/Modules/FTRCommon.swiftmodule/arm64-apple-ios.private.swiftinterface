@@ -1,0 +1,307 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FTRCommon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+@_exported import FTRCommon
+import Foundation
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_spi(FTRInternalApi) public enum FTRNetworkError : Swift.Error {
+  @_spi(FTRInternalApi) case decoding
+  @_spi(FTRInternalApi) case jsonDecoding
+  @_spi(FTRInternalApi) case invalidURL
+  @_spi(FTRInternalApi) case dataSerializationFailed(any Swift.Error)
+  @_spi(FTRInternalApi) case dataTaskRequestError(any Swift.Error)
+  @_spi(FTRInternalApi) case dataTaskRequestURLError(Foundation.URLError)
+  @_spi(FTRInternalApi) case urlResponseError
+  @_spi(FTRInternalApi) case missingData
+  @_spi(FTRInternalApi) case uncommonStatusCodeError(Swift.Int)
+  @_spi(FTRInternalApi) case badRequest
+  @_spi(FTRInternalApi) case unauthorized
+  @_spi(FTRInternalApi) case forbidden
+  @_spi(FTRInternalApi) case notFound
+  @_spi(FTRInternalApi) case serverError
+  @_spi(FTRInternalApi) case unavailable
+  @_spi(FTRInternalApi) public var errorDescription: Swift.String {
+    @_spi(FTRInternalApi) get
+  }
+}
+@_spi(FTRInternalApi) public typealias Executable<T> = () throws -> T
+@_spi(FTRInternalApi) public typealias ExecutableCompat = () -> Any
+@_spi(FTRInternalApi) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class FTRJobManager : ObjectiveC.NSObject {
+  @_spi(FTRInternalApi) @objc public static let shared: FTRCommon.FTRJobManager
+  @_spi(FTRInternalApi) @objc final public var isEnabled: Swift.Bool
+  @_spi(FTRInternalApi) final public func async<T>(_ request: FTRCommon.FTRJobRequest<T>) -> Swift.Result<T, any Swift.Error>
+  @_spi(FTRInternalApi) @objc final public func async(_ request: FTRCommon.FTRJobRequestCompat) throws -> Any
+  @_spi(FTRInternalApi) @objc final public func loadDependency(_ dependency: any FTRCommon.Dependable)
+  @_spi(FTRInternalApi) @objc final public func unloadDependency(_ dependency: any FTRCommon.Dependable)
+  @_spi(FTRInternalApi) @objc final public func cancelPendingJobs()
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) public struct FTRJobRequest<T> {
+  @_spi(FTRInternalApi) public init(label: Swift.String, executable: @escaping FTRCommon.Executable<T>)
+  @_spi(FTRInternalApi) public func setRequireDependency(_ requiredDependency: FTRCommon.FTRDependencyRequirement)
+  @_spi(FTRInternalApi) public func removeRequireDependency(_ requiredDependency: FTRCommon.FTRDependencyRequirement)
+  @_spi(FTRInternalApi) public mutating func setRetriesCount(retriesCount: Swift.Int)
+  @_spi(FTRInternalApi) public mutating func setBackoffCriteria(durationSeconds: Swift.UInt32 = 1, multiplier: Swift.UInt32 = 1)
+}
+@_spi(FTRInternalApi) @objc @objcMembers final public class FTRJobRequestCompat : ObjectiveC.NSObject {
+  @_spi(FTRInternalApi) @objc public init(label: Swift.String, executable: @escaping FTRCommon.ExecutableCompat)
+  @_spi(FTRInternalApi) @objc final public func setRequireDependency(_ requiredDependency: FTRCommon.FTRDependencyRequirement)
+  @_spi(FTRInternalApi) @objc final public func removeRequireDependency(_ requiredDependency: FTRCommon.FTRDependencyRequirement)
+  @_spi(FTRInternalApi) @objc final public func setRetriesCount(_ retriesCount: Swift.Int)
+  @_spi(FTRInternalApi) @objc final public func setBackoffCriteria(_ durationSeconds: Swift.UInt32 = 1, multiplier: Swift.UInt32 = 1)
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) @objc @objcMembers final public class FTRDependencyRequirement : ObjectiveC.NSObject {
+  @_spi(FTRInternalApi) @objc public init(identifier: Swift.String, options: Foundation.NSDictionary)
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) @objc public protocol Dependable {
+  @_spi(FTRInternalApi) @objc static var identifier: Swift.String { get }
+  @_spi(FTRInternalApi) @objc var identifier: Swift.String { get }
+  @_spi(FTRInternalApi) @objc var retryCount: Swift.Int { get }
+  @_spi(FTRInternalApi) @objc func isSatisfied(options: Foundation.NSDictionary) -> Swift.Bool
+}
+@_spi(FTRInternalApi) public enum FTRJobManagerError : Foundation.LocalizedError {
+  @_spi(FTRInternalApi) case undefinedDependency(dependencyIdentifier: Swift.String)
+  @_spi(FTRInternalApi) case unsatisfiedDependency(dependencyIdentifier: Swift.String)
+  @_spi(FTRInternalApi) case nsError(error: Foundation.NSError)
+  @_spi(FTRInternalApi) public var errorDescription: Swift.String {
+    @_spi(FTRInternalApi) get
+  }
+}
+public protocol BuildConfigProtocol {
+  var isDebug: Swift.Bool { get }
+}
+public let buildConfig: any FTRCommon.BuildConfigProtocol
+@_spi(FTRInternalApi) @objc @_inheritsConvenienceInitializers @objcMembers final public class FTRConnectivityDependable : ObjectiveC.NSObject, FTRCommon.Dependable {
+  @_spi(FTRInternalApi) @objc public static let identifier: Swift.String
+  @_spi(FTRInternalApi) @objc public static let timeoutConfig: Swift.String
+  @_spi(FTRInternalApi) @objc final public let identifier: Swift.String
+  @_spi(FTRInternalApi) @objc final public var retryCount: Swift.Int
+  @_spi(FTRInternalApi) @objc override dynamic public init()
+  @_spi(FTRInternalApi) @objc final public func isSatisfied(options: Foundation.NSDictionary) -> Swift.Bool
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobRequest {
+  @_spi(FTRInternalApi) public func setRequireConnectivity(timeoutMillis: Swift.Int64? = nil)
+}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobRequestCompat {
+  @_spi(FTRInternalApi) @available(iOS 13.0, *)
+  @objc final public func setRequireConnectivity()
+  @_spi(FTRInternalApi) @available(iOS 13.0, *)
+  @objc final public func setRequireConnectivity(timeoutMillis: Swift.Int64)
+}
+@_spi(FTRInternalApi) public typealias ContinuationBlock<T> = (any FTRCommon.Continuation<T>) throws -> Swift.Void
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+@_spi(FTRInternalApi) public protocol Continuation<T> {
+  associatedtype T
+  @_spi(FTRInternalApi) func continueWith(value: Self.T?)
+  @_spi(FTRInternalApi) func continueWith(error: (any Swift.Error)?)
+}
+#else
+@_spi(FTRInternalApi) public protocol Continuation {
+  associatedtype T
+  @_spi(FTRInternalApi) func continueWith(value: Self.T?)
+  @_spi(FTRInternalApi) func continueWith(error: (any Swift.Error)?)
+}
+#endif
+@_spi(FTRInternalApi) @_hasMissingDesignatedInitializers final public class FTRSuspendableOperation<T> : Foundation.Operation, FTRCommon.Continuation {
+  @_spi(FTRInternalApi) @objc override final public func start()
+  @_spi(FTRInternalApi) final public func continueWith(value: T?)
+  @_spi(FTRInternalApi) final public func continueWith(error: (any Swift.Error)?)
+  @_spi(FTRInternalApi) @objc override final public var isAsynchronous: Swift.Bool {
+    @_spi(FTRInternalApi) @objc get
+  }
+  @_spi(FTRInternalApi) @objc override final public func main()
+  @_spi(FTRInternalApi) @objc override final public var isFinished: Swift.Bool {
+    @_spi(FTRInternalApi) @objc get
+  }
+  @_spi(FTRInternalApi) @objc override final public var isExecuting: Swift.Bool {
+    @_spi(FTRInternalApi) @objc get
+  }
+  @_spi(FTRInternalApi) @objc override final public func cancel()
+  @_spi(FTRInternalApi) @objc deinit
+}
+public protocol FTRListenerProtocol : ObjectiveC.NSObject {
+  func invoke(_ value: Any)
+}
+public protocol FTRListenableProtocol : ObjectiveC.NSObject {
+  associatedtype Listener : FTRCommon.FTRListenerProtocol
+  func registerListener(_ listener: Self.Listener)
+  func unregisterListener(_ listener: Self.Listener)
+  func clear()
+}
+public typealias FTRCallback = (Any) -> Swift.Void
+@objc public class FTRListener : ObjectiveC.NSObject, FTRCommon.FTRListenerProtocol {
+  @objc public init(_ onDataReceived: @escaping FTRCommon.FTRCallback)
+  @objc public func invoke(_ value: Any)
+  @objc deinit
+}
+public class FTRListenable<T> : ObjectiveC.NSObject, FTRCommon.FTRListenableProtocol {
+  public typealias Listener = FTRCommon.FTRListener
+  public var value: T? {
+    get
+    set
+  }
+  public init(value: T?)
+  public func registerListener(_ listener: FTRCommon.FTRListenable<T>.Listener)
+  public func unregisterListener(_ listener: FTRCommon.FTRListenable<T>.Listener)
+  public func clear()
+  @objc deinit
+}
+@_spi(FTRInternalApi) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class FTRBackgroundQueue : ObjectiveC.NSObject {
+  @_spi(FTRInternalApi) @objc public static let backgroundConcurrentQueue: Dispatch.DispatchQueue
+  @_spi(FTRInternalApi) @objc public static let operationConcurrentQueue: Foundation.OperationQueue
+  @_spi(FTRInternalApi) @objc public static func enqueue(block: @escaping @convention(block) () -> Swift.Void)
+  @_spi(FTRInternalApi) @objc public static func enqueue(queue: Dispatch.DispatchQueue, block: @escaping @convention(block) () -> Swift.Void)
+  @_spi(FTRInternalApi) @objc deinit
+}
+extension Foundation.OperationQueue {
+  public static func with(dispatchQueue: Dispatch.DispatchQueue) -> Foundation.OperationQueue
+}
+@_spi(FTRInternalApi) extension Swift.Error {
+  @_spi(FTRInternalApi) public func log(sentErrorEvent: Swift.Bool = false)
+  @_spi(FTRInternalApi) public func description() -> Swift.String
+  @_spi(FTRInternalApi) public func toNSError(domain: Swift.String, extras: [Swift.String : Swift.String] = [:]) -> Foundation.NSError
+  @_spi(FTRInternalApi) public func printStackTrace()
+}
+@_spi(FTRInternalApi) extension Foundation.Data {
+  @_spi(FTRInternalApi) public func toString() -> Swift.String
+}
+@_spi(FTRInternalApi) extension Swift.Array where Element == Swift.Character {
+  @_spi(FTRInternalApi) public func xor(_ other: [Swift.Character]) -> [Swift.Character]
+}
+public func assertNotMainThread()
+@_spi(FTRInternalApi) extension Swift.String {
+  @_spi(FTRInternalApi) public func toLZString() -> Swift.String
+  @_spi(FTRInternalApi) public func fromLZString() -> Swift.String?
+  @_spi(FTRInternalApi) public func fromJSON() throws -> Any?
+}
+@_spi(FTRInternalApi) extension Swift.Dictionary {
+  @_spi(FTRInternalApi) public func toJSON() throws -> Foundation.Data
+}
+public protocol UserDefaultsProtocol {
+  func remove(key: Swift.String)
+  func set(key: Swift.String, value: Any?)
+  func integer(key: Swift.String) -> Swift.Int
+  func bool(key: Swift.String) -> Swift.Bool
+  func string(key: Swift.String) -> Swift.String?
+  func object<T>(key: Swift.String) -> T?
+  func any(key: Swift.String) -> Any?
+}
+@_spi(FTRInternalApi) @objc @objcMembers final public class FTRUserDefaults : ObjectiveC.NSObject, FTRCommon.UserDefaultsProtocol {
+  @_spi(FTRInternalApi) @objc public init(userDefaults: Foundation.UserDefaults = UserDefaults.standard)
+  @_spi(FTRInternalApi) @objc final public func integer(key: Swift.String) -> Swift.Int
+  @_spi(FTRInternalApi) @objc final public func bool(key: Swift.String) -> Swift.Bool
+  @_spi(FTRInternalApi) @objc final public func string(key: Swift.String) -> Swift.String?
+  @_spi(FTRInternalApi) @objc final public func any(key: Swift.String) -> Any?
+  @_spi(FTRInternalApi) @objc final public func set(key: Swift.String, value: Any?)
+  @_spi(FTRInternalApi) @objc final public func remove(key: Swift.String)
+  @_spi(FTRInternalApi) final public func object<T>(key: Swift.String) -> T?
+  @_spi(FTRInternalApi) @objc deinit
+}
+public protocol FTRLoggerProtocol {
+  static var shared: any FTRCommon.FTRLoggerProtocol { get }
+  func setLogLevel(_ logLevel: Swift.Int)
+  func setDevLogsEnabled(_ enabled: Swift.Bool)
+  func setGlobalErrorHandler(_ handler: @escaping FTRCommon.ErrorBlock)
+  func getLogLevel() -> Swift.Int
+  func error(_ log: Swift.String, sendErrorEvent shouldSendError: Swift.Bool)
+  func error(_ log: Swift.String)
+  func warning(_ log: Swift.String)
+  func debug(_ log: Swift.String)
+  func info(_ log: Swift.String)
+  func verbose(_ log: Swift.String)
+  func dev(_ log: Swift.String)
+}
+extension FTRCommon.FTRLogger {
+  public static func shared() -> any FTRCommon.FTRLoggerProtocol
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class FTRConnectivityDetector : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc final public func hasConnectivity() -> Swift.Bool
+  final public func await(timeoutMilliseconds: Swift.Int64) throws -> Swift.Bool
+  final public func await() throws -> Swift.Bool
+  @objc deinit
+}
+@_spi(FTRInternalApi) public protocol FTRForegroundMonitorProtocol {
+  @_spi(FTRInternalApi) var state: FTRCommon.ForegroundState { get }
+}
+@_spi(FTRInternalApi) @objc public enum ForegroundState : Swift.Int {
+  @_spi(FTRInternalApi) case unknown = 0
+  @_spi(FTRInternalApi) case foreground
+  @_spi(FTRInternalApi) case background
+  @_spi(FTRInternalApi) public init?(rawValue: Swift.Int)
+  @_spi(FTRInternalApi) public typealias RawValue = Swift.Int
+  @_spi(FTRInternalApi) public var rawValue: Swift.Int {
+    @_spi(FTRInternalApi) get
+  }
+}
+@_spi(FTRInternalApi) @objc @_inheritsConvenienceInitializers @objcMembers final public class FTRForegroundMonitor : ObjectiveC.NSObject, FTRCommon.FTRForegroundMonitorProtocol {
+  @_spi(FTRInternalApi) @objc public static let shared: FTRCommon.FTRForegroundMonitor
+  @_spi(FTRInternalApi) @objc final public var state: FTRCommon.ForegroundState {
+    @_spi(FTRInternalApi) @objc get
+  }
+  @_spi(FTRInternalApi) @objc override dynamic public init()
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) @objc @objcMembers final public class FTRForegroundDependable : ObjectiveC.NSObject, FTRCommon.Dependable {
+  @_spi(FTRInternalApi) @objc public static var identifier: Swift.String
+  @_spi(FTRInternalApi) @objc public static let timeoutConfigKey: Swift.String
+  @_spi(FTRInternalApi) @objc public static let foregroundStateKey: Swift.String
+  @_spi(FTRInternalApi) @objc public static let defaultTimeout: Swift.Int64
+  @_spi(FTRInternalApi) @objc final public var identifier: Swift.String
+  @_spi(FTRInternalApi) @objc final public let retryCount: Swift.Int
+  @_spi(FTRInternalApi) public init(foregroundMonitorProtocol: any FTRCommon.FTRForegroundMonitorProtocol)
+  @_spi(FTRInternalApi) @objc convenience public init(foregroundMonitor: FTRCommon.FTRForegroundMonitor)
+  @_spi(FTRInternalApi) @objc final public func isSatisfied(options: Foundation.NSDictionary) -> Swift.Bool
+  @_spi(FTRInternalApi) final public func awaitForegroundState(foregroundState: FTRCommon.ForegroundState, timeoutMilliseconds: Swift.Int64 = defaultTimeout) throws -> Swift.Bool
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobRequest {
+  @_spi(FTRInternalApi) public func setRequiredAppForegroundState(state: FTRCommon.ForegroundState, timeoutMillis: Swift.Int64 = FTRForegroundDependable.defaultTimeout)
+}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobRequestCompat {
+  @_spi(FTRInternalApi) @available(iOS 13.0, *)
+  @objc final public func setRequiredAppForegroundState(_ state: FTRCommon.ForegroundState)
+  @_spi(FTRInternalApi) @available(iOS 13.0, *)
+  @objc final public func setRequiredAppForegroundState(_ state: FTRCommon.ForegroundState, timeoutMillis: Swift.Int64)
+}
+@_spi(FTRInternalApi) public typealias ResultCompletionHandler<T, E> = (Swift.Result<T, E>) -> Swift.Void where E : Swift.Error
+@_spi(FTRInternalApi) @objc final public class FTRNetworkHelper : ObjectiveC.NSObject {
+  @_spi(FTRInternalApi) public init(urlSession: Foundation.URLSession = URLSession(configuration: .default), maxRetries: Swift.Int = 1)
+  @_spi(FTRInternalApi) final public func sendGETRequest(baseURL: Swift.String, queryParams: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:]) -> Swift.Result<FTRCommon.FTRNetworkResponse, any Swift.Error>
+  @_spi(FTRInternalApi) final public func sendPostRequest(baseURL: Swift.String, body: [Swift.String : Any?], headers: [Swift.String : Swift.String] = [:]) -> Swift.Result<FTRCommon.FTRNetworkResponse, any Swift.Error>
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) public struct FTRNetworkResponse {
+  @_spi(FTRInternalApi) public let data: Foundation.Data
+  @_spi(FTRInternalApi) public let metadata: Foundation.HTTPURLResponse
+}
+@_spi(FTRInternalApi) @_hasMissingDesignatedInitializers public class FTRJob<T> : ObjectiveC.NSObject {
+  @_spi(FTRInternalApi) public static func launch(label: Swift.String, retries: Swift.Int = 0, backoffTimeSeconds: Swift.UInt32 = 1, backoffTimeMultiplier: Swift.UInt32 = 1, queue: Foundation.OperationQueue = FTRBackgroundQueue.operationConcurrentQueue, dependencies: [Foundation.Operation] = [], block: @escaping FTRCommon.ContinuationBlock<T>) -> FTRCommon.FTRJob<T>
+  @_spi(FTRInternalApi) public func await() throws -> T
+  @_spi(FTRInternalApi) public func cancel()
+  @_spi(FTRInternalApi) @objc deinit
+}
+@_spi(FTRInternalApi) public enum FTRJobError : Foundation.LocalizedError {
+  @_spi(FTRInternalApi) case canceled
+  @_spi(FTRInternalApi) case timedout
+  @_spi(FTRInternalApi) case undefinedResult
+  @_spi(FTRInternalApi) public static func == (a: FTRCommon.FTRJobError, b: FTRCommon.FTRJobError) -> Swift.Bool
+  @_spi(FTRInternalApi) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(FTRInternalApi) public var hashValue: Swift.Int {
+    @_spi(FTRInternalApi) get
+  }
+}
+@_spi(FTRInternalApi) extension FTRCommon.ForegroundState : Swift.Equatable {}
+@_spi(FTRInternalApi) extension FTRCommon.ForegroundState : Swift.Hashable {}
+@_spi(FTRInternalApi) extension FTRCommon.ForegroundState : Swift.RawRepresentable {}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobError : Swift.Equatable {}
+@_spi(FTRInternalApi) extension FTRCommon.FTRJobError : Swift.Hashable {}

@@ -37,9 +37,10 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'ForterSDK' do |ss|
-      ss.source_files = 'FabricSimpleRisk/Classes/ForterSDK/**/*'
+      ss.frameworks = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
+      ss.source_files = 'FabricSimpleRisk/Classes/ForterSDK/**/*.swift'
       ss.dependency 'FabricSimpleRisk/Core'
-      ss.dependency 'ForterSDK', '~> 3.0.4'
+      ss.ios.vendored_frameworks = 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/ForterSDK.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRAuth.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRCommon.xcframework'
   end
   
   s.subspec 'RiskifiedBeacon' do |ss|

@@ -26,12 +26,12 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xuhaiqing' => 'haiqing.xu@ly.com' }
-  s.source           = { :git => 'git@github.com:zhaojiewen/FabricSimpleRisk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhaojiewen/FabricSimpleRisk.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
   s.static_framework = true
   s.swift_versions = ['5.0', '5.5', '5.9']
-  
+  s.platform = :ios, '12.0'
+
   s.subspec 'Core' do |ss|
       ss.source_files = 'FabricSimpleRisk/Classes/Core/**/*'
   end
@@ -40,22 +40,18 @@ Pod::Spec.new do |s|
       ss.source_files = 'FabricSimpleRisk/Classes/ForterSDK/**/*'
       ss.dependency 'FabricSimpleRisk/Core'
       ss.dependency 'ForterSDK', '~> 3.0.4'
-      ss.ios.deployment_target = '12.0'
   end
   
   s.subspec 'RiskifiedBeacon' do |ss|
       ss.source_files = 'FabricSimpleRisk/Classes/RiskifiedBeacon/**/*'
       ss.dependency 'FabricSimpleRisk/Core'
       ss.dependency 'RiskifiedBeaconXCFramework', '~> 1.3.2'
-      ss.ios.deployment_target = '11.0'
-
   end
   
   s.subspec 'TrustDecisionPro' do |ss|
       ss.source_files = 'FabricSimpleRisk/Classes/TrustDecisionPro/**/*'
       ss.dependency 'FabricSimpleRisk/Core'
       ss.dependency 'TrustDecisionPro', '~> 5.2.0'
-      ss.ios.deployment_target = '9.0'
   end
   
 end

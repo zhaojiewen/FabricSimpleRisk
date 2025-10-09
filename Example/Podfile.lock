@@ -46,7 +46,7 @@ CHECKOUT OPTIONS:
     :tag: 3.0.4
 
 SPEC CHECKSUMS:
-  FabricSimpleRisk: 72808249c2853a430cda4f5eb0151a93f963dd00
+  FabricSimpleRisk: 64671d5cbcc5961d4eff20af6ac899ada7669b38
   ForterSDK: 579bf21a2683cd5d47f344e4394206d1b8659853
   RiskifiedBeaconXCFramework: d5b2f1a885ea33bd15c7757002d1c09788853dc3
   TrustDecisionPro: ee8d7ab3984e8e56b4ae832810e939f1b8e08002

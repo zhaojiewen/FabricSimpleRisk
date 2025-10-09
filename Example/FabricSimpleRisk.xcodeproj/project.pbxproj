@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14067E7249B05731EA5A6683 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		14067E7249B05731EA5A6683 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3A1F4B6C70786F94C6D9B93D /* Pods_FabricSimpleRisk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FabricSimpleRisk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		523CF35103E1A7EC6A106964 /* Pods-FabricSimpleRisk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricSimpleRisk_Example.debug.xcconfig"; path = "Target Support Files/Pods-FabricSimpleRisk_Example/Pods-FabricSimpleRisk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FabricSimpleRisk_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FabricSimpleRisk_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +43,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		75D742FF75F9B0B8690EA3E8 /* Pods-FabricSimpleRisk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricSimpleRisk_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FabricSimpleRisk_Tests/Pods-FabricSimpleRisk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1A957167455C87C59EAD9BA /* Pods-FabricSimpleRisk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricSimpleRisk_Example.release.xcconfig"; path = "Target Support Files/Pods-FabricSimpleRisk_Example/Pods-FabricSimpleRisk_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C4ECA207F0A9FCF721C46FF5 /* FabricSimpleRisk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FabricSimpleRisk.podspec; path = ../FabricSimpleRisk.podspec; sourceTree = "<group>"; };
-		C9BC0B64C65050E4A409E32F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C4ECA207F0A9FCF721C46FF5 /* FabricSimpleRisk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FabricSimpleRisk.podspec; path = ../FabricSimpleRisk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9BC0B64C65050E4A409E32F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F2FE5EAC2256AEB76FAA92E8 /* Pods_FabricSimpleRisk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FabricSimpleRisk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF860E24E640534622A18F4E /* Pods-FabricSimpleRisk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricSimpleRisk_Tests.release.xcconfig"; path = "Target Support Files/Pods-FabricSimpleRisk_Tests/Pods-FabricSimpleRisk_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,6 @@
 				75D742FF75F9B0B8690EA3E8 /* Pods-FabricSimpleRisk_Tests.debug.xcconfig */,
 				FF860E24E640534622A18F4E /* Pods-FabricSimpleRisk_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KG74TGNV4F;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KG74TGNV4F;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,11 +271,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FabricSimpleRisk_Example/Pods-FabricSimpleRisk_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FabricSimpleRisk/FabricSimpleRisk.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForterSDK/ForterSDK.framework/ForterSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForterSDK/FTRAuth.framework/FTRAuth",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForterSDK/FTRCommon.framework/FTRCommon",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RiskifiedBeaconXCFramework/RiskifiedBeacon.framework/RiskifiedBeacon",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TrustDecisionPro/TDCorePlugin/TDCorePlugin.framework/TDCorePlugin",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FabricSimpleRisk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForterSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTRAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTRCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RiskifiedBeacon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TDCorePlugin.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,7 +488,9 @@
 			baseConfigurationReference = 523CF35103E1A7EC6A106964 /* Pods-FabricSimpleRisk_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KG74TGNV4F;
 				INFOPLIST_FILE = FabricSimpleRisk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +505,9 @@
 			baseConfigurationReference = A1A957167455C87C59EAD9BA /* Pods-FabricSimpleRisk_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KG74TGNV4F;
 				INFOPLIST_FILE = FabricSimpleRisk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75D742FF75F9B0B8690EA3E8 /* Pods-FabricSimpleRisk_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KG74TGNV4F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +531,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +545,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF860E24E640534622A18F4E /* Pods-FabricSimpleRisk_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KG74TGNV4F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

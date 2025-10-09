@@ -1,17 +1,6 @@
 PODS:
   - FabricSimpleRisk (0.1.0):
-    - FabricSimpleRisk/Core (= 0.1.0)
-    - FabricSimpleRisk/ForterSDK (= 0.1.0)
-    - FabricSimpleRisk/RiskifiedBeacon (= 0.1.0)
-    - FabricSimpleRisk/TrustDecisionPro (= 0.1.0)
-  - FabricSimpleRisk/Core (0.1.0)
-  - FabricSimpleRisk/ForterSDK (0.1.0):
-    - FabricSimpleRisk/Core
-  - FabricSimpleRisk/RiskifiedBeacon (0.1.0):
-    - FabricSimpleRisk/Core
     - RiskifiedBeaconXCFramework (~> 1.3.2)
-  - FabricSimpleRisk/TrustDecisionPro (0.1.0):
-    - FabricSimpleRisk/Core
     - TrustDecisionPro (~> 5.2.0)
   - RiskifiedBeaconXCFramework (1.3.2)
   - TrustDecisionPro (5.2.0):
@@ -35,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FabricSimpleRisk: 145b48caec865dbc64305cbdd89c63d7a80544a1
+  FabricSimpleRisk: 38626b6c6d4682d8c1fbf1f80108f03a66c29f01
   RiskifiedBeaconXCFramework: d5b2f1a885ea33bd15c7757002d1c09788853dc3
   TrustDecisionPro: ee8d7ab3984e8e56b4ae832810e939f1b8e08002
 

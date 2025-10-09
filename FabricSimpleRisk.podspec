@@ -27,32 +27,16 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xuhaiqing' => 'haiqing.xu@ly.com' }
   s.source           = { :git => 'https://github.com/zhaojiewen/FabricSimpleRisk.git', :tag => s.version.to_s }
-
+  s.frameworks = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
+  
   s.static_framework = true
   s.swift_versions = ['5.0', '5.5', '5.9']
   s.platform = :ios, '12.0'
+  s.source_files = 'FabricSimpleRisk/Classes/**/*.swift'
 
-  s.subspec 'Core' do |ss|
-      ss.source_files = 'FabricSimpleRisk/Classes/Core/**/*'
-  end
+  s.ios.vendored_frameworks = 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/ForterSDK.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRAuth.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRCommon.xcframework'
   
-  s.subspec 'ForterSDK' do |ss|
-      ss.frameworks = 'Foundation', 'CoreFoundation', 'CFNetwork', 'SystemConfiguration',  'CoreTelephony',  'UIKit'
-      ss.source_files = 'FabricSimpleRisk/Classes/ForterSDK/**/*.swift'
-      ss.dependency 'FabricSimpleRisk/Core'
-      ss.ios.vendored_frameworks = 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/ForterSDK.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRAuth.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRCommon.xcframework'
-  end
-  
-  s.subspec 'RiskifiedBeacon' do |ss|
-      ss.source_files = 'FabricSimpleRisk/Classes/RiskifiedBeacon/**/*'
-      ss.dependency 'FabricSimpleRisk/Core'
-      ss.dependency 'RiskifiedBeaconXCFramework', '~> 1.3.2'
-  end
-  
-  s.subspec 'TrustDecisionPro' do |ss|
-      ss.source_files = 'FabricSimpleRisk/Classes/TrustDecisionPro/**/*'
-      ss.dependency 'FabricSimpleRisk/Core'
-      ss.dependency 'TrustDecisionPro', '~> 5.2.0'
-  end
-  
+  s.dependency 'RiskifiedBeaconXCFramework', '~> 1.3.2'
+  s.dependency 'TrustDecisionPro', '~> 5.2.0'
+
 end

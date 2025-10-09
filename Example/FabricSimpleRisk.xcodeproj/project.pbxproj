@@ -271,9 +271,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FabricSimpleRisk_Example/Pods-FabricSimpleRisk_Example-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FabricSimpleRisk/ForterSDK/ForterSDK.framework/ForterSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FabricSimpleRisk/ForterSDK/FTRAuth.framework/FTRAuth",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FabricSimpleRisk/ForterSDK/FTRCommon.framework/FTRCommon",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FabricSimpleRisk/ForterSDK.framework/ForterSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FabricSimpleRisk/FTRAuth.framework/FTRAuth",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FabricSimpleRisk/FTRCommon.framework/FTRCommon",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/RiskifiedBeaconXCFramework/RiskifiedBeacon.framework/RiskifiedBeacon",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TrustDecisionPro/TDCorePlugin/TDCorePlugin.framework/TDCorePlugin",
 			);

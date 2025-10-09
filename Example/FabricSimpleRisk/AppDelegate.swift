@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        configSimpleRisk()
+        //configSimpleRisk()
         /// 或者单独调用某一个SDK
         //configRisk()
         return true
@@ -34,14 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     /// 统一入口，调用多个SDK
     func configSimpleRisk() {
+        // 请配置好参数再运行，以避免crash
         FabricSimpleRisk.start(providers: [.forter, .riskified, .trustDecision],
-                               forterSiteId: "cc4b7359b1d7",
+                               forterSiteId: "",
                                riskifiedShopName: "",
                                riskifiedSessionToken: "",
                                tdConfig: FabricTDConfig(isPrivacyAgree: true,
-                                                        partner: "lycom",
-                                                        appKey: "773085f8d89718d00bde643c7b2fbc1f",
-                                                        country: "cn"))
+                                                        partner: "",
+                                                        appKey: "",
+                                                        country: ""))
     }
     
 

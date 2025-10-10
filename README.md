@@ -48,6 +48,12 @@ pod 'FabricSimpleRisk', '1.0.0'
         }
 ```
 
+## 合规说明
+请贵司在隐私政策弹窗等界面中告知以下合规说明
+
+### 同盾 https://cn-doc.trustdecision.com/reference/ios-global#%E5%90%88%E8%A7%84%E8%AF%B4%E6%98%8E
+### Forter https://docs.forter.com/mobile-sdks/sdk-data-compliance#VTJfc
+### Riskified https://www.riskified.com/terms/#privacy
 
 ## Author
 

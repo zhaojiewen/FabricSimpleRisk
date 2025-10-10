@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
   s.ios.vendored_frameworks = 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/ForterSDK.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRAuth.xcframework', 'FabricSimpleRisk/Classes/ForterSDK/xcframeworks/FTRCommon.xcframework'
   
-  s.dependency 'RiskifiedBeaconXCFramework', '~> 1.3.2'
-  s.dependency 'TrustDecisionPro', '~> 5.2.0'
+  s.dependency 'RiskifiedBeaconXCFramework', '1.3.2'
+  s.dependency 'TrustDecisionPro', '5.2.0'
 
 end

@@ -26,24 +26,25 @@ pod 'FabricSimpleRisk', '1.0.0'
 ### 初始化SDK， 注意：中国大陆合规要求，只有同意了隐私协议才能进行初始化
 
 ```
-            SimpleRisk.start(providers: [.forter, .riskified, .trustDecision],
-                               forterSiteId: "",
-                               riskifiedShopName: "",
-                               riskifiedSessionToken: "",
-                               tdConfig: FabricTDConfig(partner: "",
-                                                        appKey: "",
-                                                        country: ""))
+        SimpleRisk.start(providers: [.forter, .riskified, .trustDecision],
+                         forterSiteId: "",
+                         riskifiedShopName: "",
+                         riskifiedSessionToken: "",
+                         tdConfig: FabricTDConfig(partner: "",
+                                                  appKey: "",
+                                                  country: ""))
 ```
 
 
 ### 获取Token
 
-```
-        let forterToken = FabricSimpleRisk.getForterToken()
-        debugPrint("forterToken: \(forterToken)")
-        let tdBlackBox = FabricSimpleRisk.getBlackBox { blackBox in
-            debugPrint("blackBox: \(blackBox)")
-
+```     // Forter
+        let forterToken = SimpleRisk.getForterToken()
+        debugPrint("forterToken: \(String(describing: forterToken))")
+        
+        //同盾
+        SimpleRisk.getBlackBox { blackBox in
+            debugPrint("blackBox: \(String(describing: blackBox))")
         }
 ```
 

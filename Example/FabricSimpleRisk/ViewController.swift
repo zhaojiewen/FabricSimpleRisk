@@ -29,11 +29,13 @@ class ViewController: UIViewController {
     }
     
     @objc func onGetToken() {
+        // Forter
         let forterToken = SimpleRisk.getForterToken()
         debugPrint("forterToken: \(String(describing: forterToken))")
+                
+        //同盾
         SimpleRisk.getBlackBox { blackBox in
             debugPrint("blackBox: \(String(describing: blackBox))")
-
         }
     }
 

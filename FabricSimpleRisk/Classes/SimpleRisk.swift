@@ -7,8 +7,11 @@ public typealias FabricGetTokenBlock = @convention(block) (String?) -> Void
 
 // MARK: - 风控服务商
 @objc public enum FabricSimpleRiskProviderOptions: Int {
+    /// Forter  https://docs.forter.com/mobile-sdks
     case forter        = 1
+    /// Riskified https://apiref.riskified.com/#beacon
     case riskified     = 2
+    /// 同盾 https://cn-doc.trustdecision.com/reference/ios-global
     case trustDecision = 4
 }
 
@@ -21,20 +24,12 @@ public struct FabricSimpleRiskProvider: OptionSet {
     public static let trustDecision = FabricSimpleRiskProvider(rawValue: 1 << 2)
 }
 
-extension FabricSimpleRiskProvider {
-    public init(_ objcValue: FabricSimpleRiskProviderOptions) {
-        self.init(rawValue: objcValue.rawValue)
-    }
-
-    public var objcValue: FabricSimpleRiskProviderOptions {
-        return FabricSimpleRiskProviderOptions(rawValue: rawValue) ?? .forter
-    }
-}
 
 // MARK: - SDK 主类
-@objc public class FabricSimpleRisk: NSObject {
+@objc public class SimpleRisk: NSObject {
     
-    /// 主入口，启动第三方SDK
+    /// Swift-主入口，启动第三方SDK。
+    /// 如果包含同盾（TrustDecision）请确保在用户同意隐私协议后调用。
     /// - Parameters:
     ///   - providers: 风控SDK集成来源 FabricSimpleRiskProvider
     ///   - forterSiteId: The Forter site id from the Forter Portal
@@ -50,23 +45,24 @@ extension FabricSimpleRiskProvider {
                              tdConfig: FabricTDConfig = FabricTDConfig()) {
         if providers.contains(.forter) {
             debugPrint("启动 Forter SDK")
-            FabricSimpleRisk.startForterSDK(withSiteId: forterSiteId)
+            SimpleRisk.startForterSDK(withSiteId: forterSiteId)
         }
         
         if providers.contains(.riskified) {
             debugPrint("启动 Riskified SDK")
-            FabricSimpleRisk.startRiskifiedBeacon(shopName: riskifiedShopName,
+            SimpleRisk.startRiskifiedBeacon(shopName: riskifiedShopName,
                                                   sessionToken: riskifiedSessionToken)
         }
         
         if providers.contains(.trustDecision) {
             debugPrint("启动 TrustDecision SDK")
-            FabricSimpleRisk.startTD(config: tdConfig)
+            SimpleRisk.startTD(config: tdConfig)
         }
     }
 
     
-    /// 主入口，启动第三方SDK
+    /// OC-主入口，启动第三方SDK
+    /// 如果包含同盾（TrustDecision）请确保在用户同意隐私协议后调用。
     /// - Parameters:
     ///   - options: 风控SDK集成来源 FabricSimpleRiskProvider
     ///   - forterSiteId: The Forter site id from the Forter Portal

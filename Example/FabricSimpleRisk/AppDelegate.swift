@@ -17,32 +17,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //configSimpleRisk()
+//        configSimpleRisk()
         /// 或者单独调用某一个SDK
-        //configRisk()
+        configRisk()
         return true
     }
     
     
     /// 单独调用每个SDK
     func configRisk() {
-        FabricSimpleRisk.startForterSDK(withSiteId: "")
-//        FabricSimpleRisk.startRiskifiedBeacon(shopName: "", sessionToken: "")
-//        FabricSimpleRisk.startTD(isPrivacyAgree: true, partner: "", appKey: "", country: "")
-//        FabricSimpleRisk.startTD(options: [:])
+        SimpleRisk.startForterSDK(withSiteId: "")
+//        SimpleRisk.startRiskifiedBeacon(shopName: "", sessionToken: "")
+//        SimpleRisk.startTD(isPrivacyAgree: true, partner: "", appKey: "", country: "")
+//        SimpleRisk.startTD(options: [:])
     }
     
     /// 统一入口，调用多个SDK
     func configSimpleRisk() {
         // 请配置好参数再运行，以避免crash
-        FabricSimpleRisk.start(providers: [.forter, .riskified, .trustDecision],
-                               forterSiteId: "",
-                               riskifiedShopName: "",
-                               riskifiedSessionToken: "",
-                               tdConfig: FabricTDConfig(isPrivacyAgree: true,
-                                                        partner: "",
-                                                        appKey: "",
-                                                        country: ""))
+        SimpleRisk.start(providers: [.forter, .riskified, .trustDecision],
+                         forterSiteId: "",
+                         riskifiedShopName: "",
+                         riskifiedSessionToken: "",
+                         tdConfig: FabricTDConfig(partner: "",
+                                                  appKey: "",
+                                                  country: ""))
     }
     
 

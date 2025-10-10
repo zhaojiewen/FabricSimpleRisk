@@ -1,6 +1,6 @@
 import ForterSDK
 
-extension FabricSimpleRisk {
+extension SimpleRisk {
     /// 启动FoterSDK
     /// - Parameter withSiteId: siteId
     @objc

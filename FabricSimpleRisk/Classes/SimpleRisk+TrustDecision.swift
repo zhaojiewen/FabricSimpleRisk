@@ -16,25 +16,30 @@
 
 import TDMobRisk
 
-extension FabricSimpleRisk {
+extension SimpleRisk {
     
-    
-    /// 初始化：确保在用户同意隐私协议后，再进行SDK初始化,  否则无效。
+    /// 初始化：确保在用户同意隐私协议后，再进行SDK初始化
     /// - Parameter config: 同盾配置
     public static func startTD(config: FabricTDConfig) {
-        startTD(isPrivacyAgree: config.isPrivacyAgree,
-                partner: config.partner,
+        startTD(partner: config.partner,
                 appKey: config.appKey,
                 country: config.country)
     }
     
-    /// 初始化：确保在用户同意隐私协议后，再进行SDK初始化,  否则无效。
+    /// 初始化：确保在用户同意隐私协议后，再进行SDK初始化
+    /// - Parameters:
+    ///   - partner: 合作方编码，请联系我司运营或者从客户平台获取
+    ///   - appKey: 应用标识，通过客户平台创建，参考 https://cn-doc.trustdecision.com/reference/ios-%E8%8E%B7%E5%8F%96-appkey
+    ///   - country: 数据中心地区参数：
+    ///     cn代表中国
+    ///     us代表美国
+    ///     sg代表新加坡
+    ///     fra代表德国
+    ///     idna代表印尼
     @objc
-    public static func startTD(isPrivacyAgree: Bool,
-                               partner: String,
+    public static func startTD(partner: String,
                                appKey: String,
                                country: String) {
-        guard isPrivacyAgree else { return }
         let options = [
             "partner": partner,
             "appKey": appKey,
@@ -44,13 +49,18 @@ extension FabricSimpleRisk {
     }
     
     
-    /// 初始化：确保在用户同意隐私协议后，再进行SDK初始化,  否则在中国大陆不合规，详情请看上面合规说明。
+    /// 初始化：确保在用户同意隐私协议后，再进行SDK初始化。
+    /// - Parameter options: 全部配置
+    /// 请参考https://cn-doc.trustdecision.com/reference/ios-global#%E5%85%A8%E9%83%A8%E9%85%8D%E7%BD%AE
     @objc
     public static func startTD(options: [AnyHashable: Any]) {
         guard let manager = TDMobRiskManager.sharedManager() else { return }
         manager.pointee.initWithOptions(options)
     }
     
+    
+    /// get blackBox async, you should make sure that method calls after initWithOptions.
+    /// - Parameter block: 回调
     @objc
     public static func getBlackBox(block: @escaping FabricGetTokenBlock) {
         guard let manager = TDMobRiskManager.sharedManager() else { return }
@@ -62,9 +72,6 @@ extension FabricSimpleRisk {
 
 @objc
 public class FabricTDConfig: NSObject {
-    /// 是否同意隐私协议，在中国大陆合规要求在，只有同意了隐私协议才能进行初始化
-    @objc
-    public var isPrivacyAgree: Bool
     
     /// 合作方编码，请联系我司运营或者从客户平台获取
     @objc
@@ -84,11 +91,9 @@ public class FabricTDConfig: NSObject {
     public var country: String
     
     @objc
-    public init(isPrivacyAgree: Bool = false,
-                partner: String = "",
+    public init(partner: String = "",
                 appKey: String = "",
                 country: String = "cn") {
-        self.isPrivacyAgree = isPrivacyAgree
         self.partner = partner
         self.appKey = appKey
         self.country = country

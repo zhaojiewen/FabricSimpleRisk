@@ -29,9 +29,9 @@ class ViewController: UIViewController {
     }
     
     @objc func onGetToken() {
-        let forterToken = FabricSimpleRisk.getForterToken()
+        let forterToken = SimpleRisk.getForterToken()
         debugPrint("forterToken: \(String(describing: forterToken))")
-        FabricSimpleRisk.getBlackBox { blackBox in
+        SimpleRisk.getBlackBox { blackBox in
             debugPrint("blackBox: \(String(describing: blackBox))")
 
         }

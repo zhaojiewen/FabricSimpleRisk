@@ -1,6 +1,6 @@
 import RiskifiedBeacon
 
-extension FabricSimpleRisk {
+extension SimpleRisk {
     /// RiskifiedBeacon
     /// - Parameters:
     ///   - shopName: The name of your Riskified account
